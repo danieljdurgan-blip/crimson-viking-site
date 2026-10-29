@@ -1,0 +1,72 @@
+/* Crimson Viking Games: the studio site. Slate background like the studio logo, crimson and gold like its lettering. */
+@font-face{font-family:'Lilita One';src:url(fonts/lilita-one-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Nunito';font-weight:600;src:url(fonts/nunito-latin-600-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Nunito';font-weight:800;src:url(fonts/nunito-latin-800-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Nunito';font-weight:900;src:url(fonts/nunito-latin-900-normal.woff2) format('woff2');font-display:swap}
+:root{
+  --slate:#5f6874; --slate-dk:#3d434c; --ink:#2a1a10; --paper:#fffaf0; --crimson:#c8352a; --crimson-dk:#8e2219; --gold:#f5c542;
+  --display:'Lilita One','Arial Rounded MT Bold',system-ui,sans-serif; --body:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--slate);color:var(--paper);font-family:var(--body);font-weight:600;font-size:17px;line-height:1.6}
+a{color:var(--gold)}
+img{max-width:100%;display:block}
+.wrap{width:min(1100px,100% - 32px);margin:0 auto}
+
+/* header */
+.top{position:sticky;top:0;z-index:5;background:rgba(61,67,76,.94);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.brand{font-family:var(--display);font-size:24px;color:var(--paper);text-decoration:none;letter-spacing:.01em}
+.brand span{color:var(--gold)}
+.nav{display:flex;gap:18px;flex-wrap:wrap}
+.nav a{color:var(--paper);text-decoration:none;font-weight:800}
+.nav a:hover,.nav a:focus-visible{color:var(--gold)}
+
+/* hero */
+.hero{padding:28px 0 8px;text-align:center}
+.hero img{width:min(900px,100%);margin:0 auto;-webkit-mask-image:radial-gradient(ellipse 50% 50% at center,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at center,#000 72%,transparent 100%)} /* (edges fade into the page) */
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,58px);line-height:1.05;margin:18px 0 8px}
+.hero h1 b{font-weight:400;color:var(--gold)}
+.hero p{max-width:60ch;margin:0 auto;font-size:19px;color:#eef0f3}
+
+/* games */
+section{padding:40px 0}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,40px);margin:0 0 18px}
+.games{display:grid;gap:22px}
+.game{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);background:var(--paper);color:var(--ink);border:4px solid var(--ink);border-radius:22px;overflow:hidden;box-shadow:0 8px 0 var(--ink)}
+.game:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}
+.game:nth-child(even) .shot{order:2}
+.game .shot{background:#1b1f25;min-height:240px}
+.game .shot img{width:100%;height:100%;object-fit:cover}
+.game .shot.icon{display:grid;place-items:center}
+.game .shot.icon img{width:min(240px,70%);height:auto;border-radius:28px}
+.game .txt{padding:24px 26px}
+.game h3{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;margin:0 0 6px}
+.tag{display:inline-block;font-weight:900;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--paper);background:var(--crimson);border-radius:999px;padding:3px 12px;margin-bottom:10px}
+.tag.dev{background:var(--slate-dk)}
+.game p{margin:0 0 10px}
+.game ul{margin:0;padding-left:20px}
+@media (max-width:760px){.game,.game:nth-child(even){grid-template-columns:1fr}.game:nth-child(even) .shot{order:0}}
+
+/* about / contact */
+.about{background:var(--slate-dk);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.about p{max-width:70ch}
+.btn{display:inline-block;font-family:var(--display);font-size:20px;color:var(--paper);background:var(--crimson);border:3px solid var(--ink);border-radius:14px;padding:10px 22px;box-shadow:0 5px 0 var(--ink);text-decoration:none}
+.btn:hover,.btn:focus-visible{background:var(--crimson-dk)}
+
+/* privacy policy */
+.doc{background:var(--paper);color:var(--ink);border:4px solid var(--ink);border-radius:22px;padding:clamp(20px,4vw,44px);margin:28px auto 40px;max-width:860px}
+.doc h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,5vw,46px);line-height:1.1;margin:0 0 6px;color:var(--crimson)}
+.doc h2{font-size:26px;margin:30px 0 8px;color:var(--ink)}
+.doc a{color:var(--crimson-dk)}
+.doc .meta{font-weight:800;opacity:.75;margin:0 0 20px}
+.doc table{width:100%;border-collapse:collapse;margin:8px 0 6px;font-size:15px}
+.doc th,.doc td{text-align:left;vertical-align:top;padding:8px 10px;border-top:2px solid rgba(42,26,16,.15)}
+.doc th{font-weight:900}
+.doc code{font-size:14px;background:#f1e8d6;border-radius:6px;padding:1px 6px}
+/* things the studio owner still has to fill in before publishing */
+.fill{background:#ffe46b;color:var(--ink);border-radius:6px;padding:0 5px;font-weight:900}
+
+footer{padding:26px 0 40px;text-align:center;font-weight:800;color:#e5e8ec}
+footer a{color:var(--paper)}
