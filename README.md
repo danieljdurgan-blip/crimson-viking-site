@@ -7,7 +7,7 @@ The studio website: a home page with the games (`index.html`) and the privacy po
 Fill these in. They're highlighted in yellow on the pages until you do:
 
 - [ ] **Your name.** Replace `[your name]` in `index.html` and `privacy.html`. If you set the studio up as a company later, use the company's name instead.
-- [ ] **Contact email.** Replace `contact@yourdomain.com` (3 places in `privacy.html`, 1 in `index.html`) with your real address, for example `hello@yourdomain.com` once you have the domain.
+- [x] **Contact email.** The pages use `crimsonvikinggames@gmail.com`.
 - [ ] **Read the privacy policy through.** It describes how the games work today: settings and progress stay on the player's PC, multiplayer is over LAN, Steam and the Epic Games Store, and there's no analytics or ads. If that changes, update the page and the date at the top. It isn't legal advice, so if you're unsure about anything, get it checked.
 
 ## Hosting it free on GitHub Pages, with your own domain
@@ -20,7 +20,7 @@ Fill these in. They're highlighted in yellow on the pages until you do:
    - a **CNAME** record for `www`, pointing to `<your-github-name>.github.io`
 
    When GitHub shows the domain as working, tick **Enforce HTTPS**.
-5. **Get the email address.** Most registrars offer free email forwarding. Set up `hello@yourdomain.com` (or whatever you chose) to forward to your normal inbox.
+5. **Optional: an email address on the domain.** Most registrars offer free email forwarding, so `hello@yourdomain.com` could forward to `crimsonvikinggames@gmail.com`. If you set that up, change the address on the pages to match.
 
 ## Verifying the domain for Epic
 
