@@ -26,7 +26,7 @@ Checklist:
 
 In the Epic Developer Portal (Epic Account Services → your application → Brand Settings), add the website and privacy policy addresses:
 
-- Website: `https://yourdomain.com`
-- Privacy policy: `https://yourdomain.com/privacy.html`
+- Website: `https://crimsonvikinggames.com`
+- Privacy policy: `https://crimsonvikinggames.com/privacy.html`
 
 Epic then shows how to verify the domain, usually a **TXT** record to add at your registrar. Add it there, wait a few minutes, and press Verify.
