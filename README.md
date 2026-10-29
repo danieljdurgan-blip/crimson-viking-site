@@ -4,9 +4,9 @@ The studio website: a home page with the games (`index.html`) and the privacy po
 
 ## Before you publish
 
-Fill these in. They're highlighted in yellow on the pages until you do:
+Checklist:
 
-- [ ] **Your name.** Replace `[your name]` in `index.html` and `privacy.html`. If you set the studio up as a company later, use the company's name instead.
+- [x] **Who runs the studio.** The pages give just the studio name and email. If you set the studio up as a company later, you could add the company's name to the privacy policy's "Who we are" section.
 - [x] **Contact email.** The pages use `crimsonvikinggames@gmail.com`.
 - [ ] **Read the privacy policy through.** It describes how the games work today: settings and progress stay on the player's PC, multiplayer is over LAN, Steam and the Epic Games Store, and there's no analytics or ads. If that changes, update the page and the date at the top. It isn't legal advice, so if you're unsure about anything, get it checked.
 
