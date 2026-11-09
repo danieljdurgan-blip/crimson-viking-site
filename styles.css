@@ -51,6 +51,7 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,40px);mar
 .tag.dev{background:var(--slate-dk)}
 .game p{margin:0 0 10px}
 .game ul{margin:0;padding-left:20px}
+.game .btn{margin-top:16px;font-size:18px}
 @media (max-width:760px){.game,.game:nth-child(even){grid-template-columns:1fr}.game:nth-child(even) .shot{order:0}}
 
 /* about / contact */
